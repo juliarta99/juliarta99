@@ -1,7 +1,10 @@
+import AboutSection from "../components/sections/AboutSection"
+import SkillSection from "../components/sections/SkillSection"
 const AboutView = () => {
     return (
         <>
-         <h1>Ini About</h1>
+            <AboutSection></AboutSection>
+            <SkillSection></SkillSection>
         </>
     )
 }

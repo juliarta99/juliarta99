@@ -1,7 +1,9 @@
 const PortfolioView = () => {
     return (
         <>
-            <h1>Ini Contact</h1>
+            <div className="pt-20 pb-5">
+                <h1>Ini Portfolio</h1>
+            </div>
         </>
     )
 }

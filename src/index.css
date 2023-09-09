@@ -5,3 +5,22 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
+.left-imageHomeSm{
+  left: -30px;
+}
+.left-imageHome{
+  left: -120px;
+}
+.image-with-shadow {
+  animation: shadowAnimation 3s infinite alternate;
+}
+@keyframes shadowAnimation {
+  0% {
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+    /* Efek bayangan awal */
+  }
+  100% {
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5));
+    /* Efek bayangan saat mencapai 100% animasi */
+  }
+}

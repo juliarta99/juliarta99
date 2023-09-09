@@ -1,7 +1,8 @@
+import ContactSection from "../components/sections/ContactSection"
 const ContactView = () => {
     return (
         <>
-            <h1>Ini Contact</h1>
+            <ContactSection></ContactSection>
         </>
     )
 }
