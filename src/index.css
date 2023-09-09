@@ -17,10 +17,8 @@
 @keyframes shadowAnimation {
   0% {
     filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
-    /* Efek bayangan awal */
   }
   100% {
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5));
-    /* Efek bayangan saat mencapai 100% animasi */
   }
 }

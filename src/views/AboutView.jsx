@@ -1,10 +1,13 @@
 import AboutSection from "../components/sections/AboutSection"
-import SkillSection from "../components/sections/SkillSection"
+import SkillsSection from "../components/sections/SkillsSection"
+import Footer from "../components/Footer"
+
 const AboutView = () => {
     return (
         <>
             <AboutSection></AboutSection>
-            <SkillSection></SkillSection>
+            <SkillsSection></SkillsSection>
+            <Footer></Footer>
         </>
     )
 }

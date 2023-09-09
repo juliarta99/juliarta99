@@ -28,7 +28,7 @@ const HomeSection = () => {
                         })}
                     </ul>
                     <Link to='/about' className="mt-5">
-                        <button className="py-2 px-4 text-xs md:text-sm rounded-md bg-transparent border border-gray-500 shadow-lg opacity-70 hover:opacity-100 duration-500">Lihat banyak tentang saya <FontAwesomeIcon icon={faArrowRight} /></button>
+                        <button className="py-2 px-4 text-xs md:text-sm rounded-md bg-transparent border border-gray-500 shadow-lg opacity-70 hover:opacity-100 hover:bg-sky-500 hover:shadow-sky-300 duration-500">More about me <FontAwesomeIcon icon={faArrowRight} /></button>
                     </Link>
                 </div>
             </div>
