@@ -1,13 +1,14 @@
 import PortfolioSection from "../components/sections/PortfolioSection"
+import Footer from '../components/Footer'
 
 const PortfolioView = () => {
     return (
         <>
             <div className="py-20">
+                <p className="text-center font-bold italic">In development</p>
                 <PortfolioSection></PortfolioSection>
-                <p>This is an example project, other projects have not been added</p>
-                <p>In development</p>
             </div>
+            <Footer></Footer>
         </>
     )
 }
