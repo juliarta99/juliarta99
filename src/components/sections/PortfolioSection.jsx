@@ -58,11 +58,19 @@ const PortfolioSection = () => {
     return (
         <>
             <div className="container pb-20 mx-auto">
-                <h1 className="font-bold text-xl lg:text-2xl uppercase text-center">Portfolio</h1>
+                <h1 className="font-bold text-xl lg:text-2xl uppercase text-center dark:text-slate-300">Portfolio</h1>
                 <div className="grid gap-4 mt-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((data, i) => {
                         return(
-                            <ProjectCard key={i} image={data.image} name={data.name} desc={data.desc} tasks={data.tasks} linkGithub={data.linkGithub} linkWeb={data.linkWeb}></ProjectCard>
+                            <ProjectCard 
+                                key={i} 
+                                image={data.image} 
+                                name={data.name} 
+                                desc={data.desc} 
+                                tasks={data.tasks} 
+                                linkGithub={data.linkGithub} 
+                                linkWeb={data.linkWeb}
+                            />
                         )
                     })}
                 </div>

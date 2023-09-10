@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="w-full bg-white shadow-lg">
+            <footer className="w-full bg-slate-200 shadow-lg dark:bg-slate-800">
                 <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between text-center">
                     <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Juliarta</span>
                     <div className="text-xs text-gray-500 sm:text-center dark:text-gray-400 flex flex-col">

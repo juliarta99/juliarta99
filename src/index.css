@@ -2,19 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: 'Poppins', sans-serif;
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(0,255,149);
+    background: linear-gradient(90deg, rgba(0,255,149,0.5074404761904762) 0%, rgba(52,152,219,1) 100%);
+    border-radius: 50%;
+    animation: animateCircle 3s ease-in-out infinite;
 }
-.image-with-shadow {
-  animation: shadowAnimation 3s infinite alternate;
-}
-@keyframes shadowAnimation {
-  0% {
-    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
-  }
-  100% {
-    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5));
-  }
+
+@keyframes animateCircle {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-50px) translateX(50px);
+    }
 }
 
 @media (max-width: 350px) {
