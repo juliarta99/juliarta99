@@ -31,7 +31,7 @@ const Navbar = () => {
                             <FontAwesomeIcon icon={faBars} className='w-5 h-5' />
                         </button>
                     </div>
-                    <div className={`${ showLink && 'hidden'} w-full order-last md:order-2 md:block md:w-auto`}>
+                    <div className={`${ showLink == true ? '' : 'hidden'} w-full order-last md:order-2 md:block md:w-auto`}>
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 bg-white md:bg-transparent rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                             {navLink.map((link, i) => {
                                 return (

@@ -1,4 +1,4 @@
-import Image from '../../assets/juli.svg'
+import Image from '../../assets/juli.jpg'
 
 const AboutSection = () => {
     return (

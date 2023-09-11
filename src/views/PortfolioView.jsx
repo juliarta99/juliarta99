@@ -4,10 +4,7 @@ import Footer from '../components/Footer'
 const PortfolioView = () => {
     return (
         <>
-            <div className="py-20">
-                <p className="text-center font-bold italic">In development</p>
-                <PortfolioSection></PortfolioSection>
-            </div>
+            <PortfolioSection></PortfolioSection>
             <Footer></Footer>
         </>
     )

@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'
 import HomeView from './views/HomeView'
 import AboutView from "./views/AboutView"
 import PortfolioView from './views/PortfolioView'
@@ -6,8 +6,10 @@ import Navbar from './components/Navbar'
 import CircleRandom from './components/CircleRandom'
 import { useEffect, useState } from 'react'
 import ToTop from './components/ToTop'
+import NotFoundView from './views/NotFoundView'
 
 function App() {
+  // circle random
   const [circleCount, setCircleCount] = useState(0)
 
   useEffect(() => {
@@ -26,9 +28,9 @@ function App() {
   const containerWidth = window.innerWidth;
   const containerHeight = window.innerHeight;
 
-  return (
-    <>
-      <Router>
+  const Layout = () => {
+    return (
+      <>
         <Navbar />
         <ToTop />
         <div className="container">
@@ -42,10 +44,21 @@ function App() {
               />
             ))}
         </div>
+        <Outlet />
+      </>
+    )
+  }
+  
+  return (
+    <>
+      <Router>
         <Routes>
-          <Route path='/' element={<HomeView />} />
-          <Route path='/about' element={<AboutView />} />
-          <Route path='/portfolio' element={<PortfolioView />} />
+          <Route path='/' element={<Layout />}>
+            <Route index element={<HomeView />} />
+            <Route path='about' element={<AboutView />} />
+            <Route path='portfolio' element={<PortfolioView />} />
+          </Route>
+          <Route path='*' element={<NotFoundView />}></Route>
         </Routes>
       </Router>
     </>
