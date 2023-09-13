@@ -10,21 +10,7 @@ import NotFoundView from './views/NotFoundView'
 
 function App() {
   // circle random
-  const [circleCount, setCircleCount] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if(circleCount < 10) {
-        setCircleCount(circleCount + 1)
-      }
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [circleCount])
-
-  const handleAnimationIteration = () => {
-    setCircleCount(circleCount - 1);
-  };
+  const circleCount = 10;
   const containerWidth = window.innerWidth;
   const containerHeight = window.innerHeight;
 
@@ -40,7 +26,6 @@ function App() {
                 left={Math.random() * containerWidth - 80}
                 bottom={Math.random() * containerHeight}
                 duration={Math.random() * 2 + 3}
-                onAnimationIteration={handleAnimationIteration}
               />
             ))}
         </div>

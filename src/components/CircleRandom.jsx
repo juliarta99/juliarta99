@@ -1,4 +1,4 @@
-const CircleRandom = ({left, bottom, duration, onAnimationIteration}) => {
+const CircleRandom = ({left, bottom, duration}) => {
     return (
         <>
             <div 
@@ -9,7 +9,6 @@ const CircleRandom = ({left, bottom, duration, onAnimationIteration}) => {
                     bottom:`${bottom}px`,
                     animationDuration: `${duration}s`
                  }}
-                 onAnimationIteration={onAnimationIteration}
             ></div>
         </>
     )
