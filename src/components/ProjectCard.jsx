@@ -1,15 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ProjectCard = ({image, name, desc, tasks, linkGithub = null, linkWeb = null}) => {
     return (
         <>
             <div className="group backdrop-blur-sm border border-gray-200 rounded-lg shadow hover:bg-sky-200 dark:hover:bg-sky-900 duration-500 dark:border-slate-800">
-                <img 
-                    className="rounded-t-lg" 
-                    src={image} 
-                    alt={name} 
+                <LazyLoadImage
+                    src={image}
+                    alt={name}
+                    className='rounded-t-lg'
+                    placeholderSrc={image}
+                    effect='blur'
                 />
                 <div className="py-3 px-4">
                     <h5 className="text-center text-md md:text-lg font-bold text-gray-900 dark:text-slate-100">{name}</h5>

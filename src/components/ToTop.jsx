@@ -30,7 +30,7 @@ const ToTop = () => {
     return (
         <>
             {isVisible &&
-                <button onClick={scrollToTop} className="fixed md:bottom-10 md:right-10 bottom-4 right-4 p-2 flex items-center shadow-lg rounded-full bg-sky-300 shadow-sky-300 animate-bounce">
+                <button onClick={scrollToTop} className="fixed z-[9999] md:bottom-10 md:right-10 bottom-4 right-4 p-2 flex items-center shadow-lg rounded-full bg-sky-300 shadow-sky-300 animate-bounce">
                     <FontAwesomeIcon icon={faArrowUp} className="w-5 h-5"></FontAwesomeIcon>
                 </button>
             }
