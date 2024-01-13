@@ -2,6 +2,7 @@ import SimpleCard from '../SimpleCard'
 import vscode from '../../assets/vscode.svg'
 import git from '../../assets/git.svg'
 import github from '../../assets/github.svg'
+import postman from '../../assets/postman.svg'
 import figma from '../../assets/figma.svg'
 
 const ToolsSection = () => {
@@ -9,6 +10,7 @@ const ToolsSection = () => {
         {image: vscode, name: 'Visual Studio Code'},
         {image: git, name: 'Git'},
         {image: github, name: 'Github'},
+        {image: postman, name: 'Postman'},
         {image: figma, name: 'Figma'},
     ]
 
