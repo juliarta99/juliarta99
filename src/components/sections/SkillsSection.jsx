@@ -10,6 +10,7 @@ import laravel from '../../assets/laravel.svg'
 import vue from '../../assets/vue.svg'
 import react from '../../assets/react.svg'
 import mysql from '../../assets/mysql.svg'
+import wordpress from '../../assets/wordpress.svg'
 
 const SkillsSection = () => {
     const skills = [
@@ -24,6 +25,7 @@ const SkillsSection = () => {
         {image: vue, name: 'Vue JS'},
         {image: react, name: 'React JS'},
         {image: mysql, name: 'MySql'},
+        {image: wordpress, name: 'Wordpress'},
     ]
 
     

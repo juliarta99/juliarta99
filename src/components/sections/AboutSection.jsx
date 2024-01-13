@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const AboutSection = () => {
     return (
         <>
-            <div className="py-20 container mx-auto flex md:flex-row flex-col overflow-x-hidden">
+            <div className="py-24 container mx-auto flex md:flex-row flex-col overflow-x-hidden">
                 <div className="p-5 md:p-0 w-3/4 sm:w-1/2 md:w-1/3 xl:w-1/4 h-max mx-auto relative">
                     <LazyLoadImage
                         src={Image}

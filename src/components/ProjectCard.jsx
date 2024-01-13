@@ -27,10 +27,10 @@ const ProjectCard = ({image, name, desc, tasks, linkGithub = null, linkWeb = nul
                         })}
                     </div>
                     <div className="flex gap-4 mt-2 justify-center">
-                        {linkGithub != null ? <a href={linkGithub}>
+                        {linkGithub != null ? <a href={linkGithub} target="_blank">
                             <FontAwesomeIcon icon={faGithub} className="w-5 h-5 opacity-80 hover:opacity-100 dark:text-white"></FontAwesomeIcon>
                         </a> : ''}
-                        {linkWeb != null ? <a href={linkWeb}>
+                        {linkWeb != null ? <a href={linkWeb} target="_blank">
                             <FontAwesomeIcon icon={faGlobe} className="w-5 h-5 opacity-80 hover:opacity-100 dark:text-white"></FontAwesomeIcon>
                         </a> : ''}
                     </div>
