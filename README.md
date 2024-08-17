@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Juliarta</h1>
-<h3 align="center">A student from SMKN 1 Denpasar</h3>
 
 - 🌱 I’m currently learning **Next JS**
 
