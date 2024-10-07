@@ -7,7 +7,7 @@ import lihatKanan from '../../assets/lihatKanan.svg';
 const HomeSection = () => {
     const Sosmed = [
         {name: faGithub, link: 'https://github.com/juliarta99'},
-        {name: faLinkedin, link: 'https://www.linkedin.com/in/si-ngurah-putu-juliarta-5a6359262'},
+        {name: faLinkedin, link: 'https://www.linkedin.com/in/ngurah-juliarta'},
         {name: faInstagram, link: 'https://instagram.com/n.juliarta'}
     ]
     
