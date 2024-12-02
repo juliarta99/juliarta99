@@ -1,12 +1,8 @@
 <h1 align="center">Hi 👋, I'm Juliarta</h1>
 
-- 🌱 I’m currently learning **Next JS**
-
 - 👨‍💻 All of my projects are available at [https://juliarta.vercel.app](https://juliarta.vercel.app)
 
 - 💬 Ask me about anything
-  
-- 📫 How to reach me: adij4255@gmail.com
 
 <h3 align="left">Languages and Tools</h3>
 <p align="left"> 
